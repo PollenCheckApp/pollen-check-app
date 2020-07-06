@@ -9,7 +9,7 @@ axios
     .then(response => {
         console.log(response.data);
 
-        const pollenData = response.data.content;
+        const pollenDataAmbrosia = response.data.content[0].Pollen.Ambrosia;
 
        
         
