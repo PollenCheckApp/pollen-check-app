@@ -10,6 +10,7 @@ axios
         console.log(response.data);
 
         const pollenDataAmbrosia = response.data.content[0].Pollen.Ambrosia;
+        
 
        
         
