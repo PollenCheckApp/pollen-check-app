@@ -1,12 +1,22 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 const pollendataSchema = new Schema({
-    username: String,
-    password: String,
-    googleID: String
+  grassPollen: String,
+
+  ragweedPollen: String,
+  
+  birchpollen: String,
+  
+  ryePollen: String,
+  
+  hazelpollen: String,
+  
+  alderPollen: String,
+  
+  ashpollen: String,
+  
+  mugwortpollen: String
     
-}, {
-    timestamps: {createdAt: "created_at", updatedAt: "updated_at"}
 });
 
 const pollenData = mongoose.model("pollenData", pollendataSchema);
