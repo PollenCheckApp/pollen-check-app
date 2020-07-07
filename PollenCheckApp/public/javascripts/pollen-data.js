@@ -8,8 +8,10 @@ axios
     .get(apiUrl)
     .then(response => {
         console.log(response.data);
+        const rawData = response.data;
+        const pollenDataAmbrosia = response.data.content[0].Pollen.Ambrosia.today;
 
-        const pollenDataAmbrosia = response.data.content[0].Pollen.Ambrosia;
+        console.log(pollenDataAmbrosia);
         
 
        
